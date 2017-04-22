@@ -141,7 +141,9 @@ function drawEverything() {
 	// next line draws the donkey
 	canvasContext.drawImage(donkey, donkeyX, donkeyY, 50, 50)
 	canvasContext.fillText(player1Score, 100, 100);
+	canvasContext.fillText("<-- You", 50, 50);
 	canvasContext.fillText(player2Score, canvas.width-100, 100);
+	canvasContext.fillText("Not You -->", canvas.width-250, 50);
 }
 function colorRect(leftX,topY, width,height, drawColor) {
 	canvasContext.fillStyle = drawColor;
